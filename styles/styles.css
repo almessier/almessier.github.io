@@ -36,8 +36,7 @@ section, footer {
 }
 
 .placeholder {
-    height: 200px;
-    width: 1000px;
+    width: 100%;
 }
 
 .project {
@@ -49,27 +48,22 @@ section, footer {
 #container {
     margin-left: 300px;
     margin-right: 300px;
-}
-
-#container:after {
-    content: "";
-    display: table;
-    clear: both
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 #home {   
     float: left;
     background-color: #555555;
-    width: 67.5%;
     padding: 20px;
     margin-top: 20px;
-    font-size: 18px;
+    margin-right: 20px;
+    font-size:22px;
 }
 
 #about-me {   
     float: right;
-    background-color: #555555;
-    width: 25%;  
+    background-color: #555555; 
     padding: 20px;
     margin-top: 20px;
     font-size: 16px;
@@ -82,13 +76,97 @@ section, footer {
 }
 
 #me {
-    height: 350px;
-    width: 250px;
+    width: 100%;
 }
 
 #name {
-    margin-left: 3px;
+    margin-left: 22px;
 }
+
+#email {
+    margin-left: 26px;
+}
+
 #message {
     height: 50px;
 }
+
+#about-txt-span {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1700px) {
+    nav, section, footer {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    #container {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    nav, section, footer {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    #container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav, section, footer {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #container {
+        margin-left: 0px;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #home {
+        margin-right: 0px;
+    }
+
+    #me {
+        width: 100%;
+    }
+
+    #about-me {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    #about-txt-p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #about-txt-p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #about-txt-p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:700px) {
+    img#me {
+        display: none;
+    }
+    #about-me {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
