@@ -23,16 +23,13 @@ nav a {
     padding: 15px;
 }
 
-section {
-    margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
 footer {
     text-align: center;
     background-color: darkslategray;
     padding: 20px;
+}
+
+section, footer {
     margin-top: 20px;
     margin-left: 300px;
     margin-right: 300px;
@@ -66,6 +63,7 @@ footer {
     width: 67.5%;
     padding: 20px;
     margin-top: 20px;
+    font-size: 18px;
 }
 
 #about-me {   
@@ -74,6 +72,7 @@ footer {
     width: 25%;  
     padding: 20px;
     margin-top: 20px;
+    font-size: 16px;
 }
 
 #project-header {
@@ -85,4 +84,11 @@ footer {
 #me {
     height: 350px;
     width: 250px;
+}
+
+#name {
+    margin-left: 3px;
+}
+#message {
+    height: 50px;
 }
