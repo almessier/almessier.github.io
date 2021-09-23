@@ -97,35 +97,25 @@ footer, .project, #project-header {
 }
 
 @media screen and (max-width: 1700px) {
-    nav, footer, .project, #project-header {
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-    #container {
+    nav, footer, .project, #container, #project-header {
         margin-left: 200px;
         margin-right: 200px;
     }
 }
 
 @media screen and (max-width: 1500px) {
-    nav, footer, .project, #project-header {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    #container {
+    nav, footer, .project, #container, #project-header {
         margin-left: 100px;
         margin-right: 100px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    nav, footer, .project, #project-header {
+    nav, footer, .project, #container, #project-header {
         margin-left: 0px;
         margin-right: 0px;
     }
     #container {
-        margin-left: 0px;
-        margin-right: 0px;
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -135,35 +125,9 @@ footer, .project, #project-header {
     }
 
     #me {
-        width: 100%;
+        display: none;
     }
 
-    #about-me {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-    }
-
-    #about-txt-p {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    #about-txt-p {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 790px) {
-    #about-txt-p {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width:700px) {
-    img#me {
-        display: none !important;
-    }
     #about-me {
         display: grid;
         grid-template-columns: 1fr;
